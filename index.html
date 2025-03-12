@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Parabéns</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <div id="tela1" class="tela">
+            <h1>Bem-vindo ao app de Parabéns!</h1>
+            <button onclick="nextScreen(2)">Começar</button>
+        </div>
+        
+        <div id="tela2" class="tela">
+            <h1>Aqui está uma foto especial!</h1>
+            <img src="https://via.placeholder.com/300" alt="Imagem Especial" class="imagem">
+            <button onclick="nextScreen(3)">Próximo</button>
+        </div>
+
+        <div id="tela3" class="tela">
+            <h1>Qual é a capital do Brasil?</h1>
+            <div class="opcoes">
+                <button onclick="checkAnswer(false)">São Paulo</button>
+                <button onclick="checkAnswer(true)">Brasília</button>
+                <button onclick="checkAnswer(false)">Rio de Janeiro</button>
+            </div>
+            <p id="feedback"></p>
+        </div>
+
+        <div id="tela4" class="tela">
+            <h1>Feliz Aniversário!</h1>
+            <p>Parabéns, você completou a jornada!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
